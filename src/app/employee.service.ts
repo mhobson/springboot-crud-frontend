@@ -8,16 +8,11 @@ import { Employee } from './employee';
 })
 export class EmployeeService {
 
-  private api1 = "http://localhost:8080/api/v1/employees";
-  private api2 = "http://localhost:8080/api/v1/employees";
+  private api = "http://localhost:8080/api/v1/employees";
 
   constructor(private httpCliente: HttpClient) { }
 
   getEmployeesList(): Observable<Employee[]> {
-    return this.httpCliente.get<Employee[]>(`${this.api1}`);
-  }
-
-  getEmployeesList2(): Observable<Employee[]> {
-    return this.httpCliente.get<Employee[]>(`${this.api2}`);
+    return this.httpCliente.get<Employee[]>(`${this.api}`);
   }
 }
