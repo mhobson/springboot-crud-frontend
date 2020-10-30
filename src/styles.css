@@ -1,6 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+.title {
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+}
+
 .footer {
     position: absolute;
     bottom: 0;

@@ -1,4 +1,4 @@
-<h2>Employee List</h2>
+<h2 class="subtitle">Employee List</h2>
 <div class="table-responsive">
     <table class="table table-striped">
         <thead>
@@ -17,7 +17,7 @@
                 <td class="w-30 text-right">
                     <button (click)="updateEmployee(employee.id)" class="btn btn-sm btn-info">Update</button>
                     <button (click)="deleteEmployee(employee.id)" class="btn btn-sm btn-danger">Delete</button>
-                    <button (click)="deleteEmployee(employee.id)" class="btn btn-sm btn-primary">View</button>
+                    <button (click)="employeeDetails(employee.id)" class="btn btn-sm btn-primary">View</button>
                 </td>
             </tr>
         </tbody>
